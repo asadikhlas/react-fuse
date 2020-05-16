@@ -1,0 +1,75 @@
+
+
+/* QUICK PANEL */
+.currently-scanning {
+  font-weight: bold;
+  font-size: 25px;
+  color: #204595;
+}
+
+.quickpanel-scanning .item {
+  border-bottom: 1px solid gray;
+}
+.quickpanel-scanning .item:last-child {
+  border-bottom: none;
+}
+.quickpanel-scanning .item .site {
+  margin: 5px 0;
+}
+.quickpanel-scanning .item .site a {
+  float: left;
+  color: #3e4c99;
+  font-weight: bold;
+}
+.quickpanel-scanning .item .site span {
+  float: right;
+  font-weight: bold;
+}
+.quickpanel-scanning .item .address {
+  clear: both;
+}
+
+.quickpanel-scanning .item .address span {
+  word-break: break-all;
+}
+.quickpanel-scanning .item .init-time {
+  display: flow-root;
+  clear: both;
+  padding: 5px 0;
+}
+.quickpanel-scanning .item .init-time .left {
+  float: left;
+}
+.quickpanel-scanning .item .init-time .right {
+  float: right;
+}
+.quickpanel-scanning .item .init-time .right font, .quickpanel-scanning .item .init-time .left font {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.quickpanel-scanning .item .init-time .right span, .quickpanel-scanning .item .init-time .left span {
+  font-size: 10px;
+}
+
+.quickpanel-scanning .item .process-cont {
+  display: flow-root;
+  margin: 5px 0;
+}
+.quickpanel-scanning .item .process-cont .process-bar {
+  height: 10px;
+  width: 80%;
+  background: #e5e5e5;
+  border-radius: 10px;
+  float: left;
+  margin: 5px 0;
+}
+.quickpanel-scanning .item .process-cont span {
+  float: right;
+  font-weight: bold;
+}
+.quickpanel-scanning .item .process-cont .process-bar div {
+  height: 10px;
+  background: #d80030;
+  border-radius: 10px;
+}

@@ -1,0 +1,198 @@
+
+.site-scan {
+    padding: 50px 20px;
+    background: #fff;
+  }
+  .site-scan form h1{
+    margin: 8px auto;
+    font-weight: 600;
+  }
+  /* Style the search field */
+  .site-scan form input[type=text] {
+    padding: 5px 20px 0;
+    font-size: 18px;
+    float: left;
+    width: 65%;
+    background: #f1f1f1;
+    height: 50px;
+    border-radius: 15px 0 0 15px;
+  }
+  
+  /* Style the submit button */
+  .site-scan form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #e3211f;
+    color: white;
+    font-size: 20px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+  }
+  
+  .site-scan form button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  .site-scan form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.project {
+    padding: 35px 0;
+  }
+  .project .item {
+    float: right;
+    display: flex;
+  }
+  .project .item font{
+    margin: 5px 5px;
+    position: relative;
+    color: gray;
+    font-weight: bold;
+  }
+  .project .item .tooltip {
+    position: relative;
+    margin-right: 40px;
+    color: grey;
+  }
+  
+  .project .item .tooltip .tooltiptext{
+    position: absolute;
+    visibility: hidden;
+    background: #e9e9e9;
+    width: 150px;
+    color: #413e3e;
+    font-size: 12px;
+    padding: 10px;
+    transition: opacity 0.3s;
+    bottom: 125%;
+    left: -280%;
+  }
+  .project .item .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #e9e9e9 transparent transparent transparent;
+  }
+  .project .item .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .project .item .tooltip:hover i {
+    color: #204595;
+  }
+  
+  .project .item span{
+    background: #204595;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: small;
+  }
+  .project .item button{
+    background: #fdd700;
+    color: #0a1e46;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+  }
+
+
+.scan-filter {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+.scan-filter header {
+  padding: 10px;
+  height: 50px;
+}
+.scan-filter header .left {
+  float: left;
+}
+.scan-filter header .right {
+  float: right;
+}
+.scan-filter .left font {
+  font-size: large;
+  font-weight: 800;
+  color: #204595;
+  padding: 0 10px;
+}
+.scan-filter .left .selected-filter {
+  font-size: large;
+  font-weight: 800;
+  color: #204595;
+  padding: 0 10px;
+}
+
+.scan-filter header .right button {
+  margin: 0 10px;
+  font-size: small;
+}
+.scan-filter header .right .apply {
+  background: #204595;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.scan-filter header .right .close {
+  background: #204595;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+
+.scan-filter section {
+  background: #f1f1f1;
+  padding: 20px;
+}
+.scan-filter section .item {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.scan-filter section .item > .flex {
+  margin-right: 15px;
+}
+
+.scan-filter section .item:last-child {
+  border-bottom: none;
+}
+.scan-filter section .title {
+  margin: 10px 0 0;
+  color: #204595 !important;
+  font-weight: 800;
+  font-size: 20px;
+}
+/* .scan-filter section .title svg path {
+  fill: rgb(0,0,0);
+} */
+.scan-filter section .item span {
+  display: flex;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.scan-filter section .item span input[type=checkbox]{
+  }
+.scan-filter section .item .one-title {
+  color: #204595 !important;
+  font-size: 20px;
+}
+.scan-filter section .item .active {
+  font-weight: 800;
+}

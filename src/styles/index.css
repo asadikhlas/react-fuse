@@ -1,0 +1,222 @@
+@import-normalize ;
+
+@import 'tailwind-base.css';
+
+body.no-animate *,
+body.no-animate *::before,
+body.no-animate *::after {
+    transition: none !important;
+    animation: none !important;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Muli, Roboto, Helvetica Neue, Arial, sans-serif;
+    background-color: #121212;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
+
+h1, .h1 {
+    font-size: 24px;
+}
+
+h2, .h2 {
+    font-size: 20px;
+}
+
+h3, .h3 {
+    font-size: 16px;
+}
+
+h4, .h4 {
+    font-size: 15px;
+}
+
+h5, .h5 {
+    font-size: 13px;
+}
+
+h6, .h6 {
+    font-size: 12px;
+}
+
+.ps > .ps__rail-y,
+.ps > .ps__rail-x {
+    z-index: 99;
+}
+
+a[role=button] {
+    text-decoration: none;
+}
+
+[role="tooltip"] {
+    z-index: 999;
+}
+
+/* Medium Devices, Desktops Only */
+@media only screen and (min-width: 992px) {
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    ::-webkit-scrollbar:hover {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+        box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.24);
+        border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        box-shadow: inset 0 0 0 20px rgba(0, 0, 0, 0.37);
+        border-radius: 20px;
+    }
+}
+
+form label {
+    z-index: 99;
+}
+
+@keyframes autofill {
+    0%,100% {
+        background: transparent;
+    }
+}
+input:-webkit-autofill {
+    animation-delay: 1s;
+    animation-name: autofill!important;
+    animation-fill-mode: both;
+    -webkit-box-shadow:0 0 0 100px transparent inset!important;
+}
+
+@import 'print.css';
+
+@import 'tables.css';
+
+@import 'prism.css';
+
+@import 'tailwind.css';
+
+
+/* .navbar-card {} */
+
+.navbar-card .tab {
+    padding: 5px 10px;
+    min-width: 0;
+    height: 32px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', Roboto, Muli, Helvetica Neue, Arial, sans-serif;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #151515;
+    opacity: 1;
+    min-height: 32px;
+    text-transform: none;
+    border-bottom: 1px solid #707070;
+}
+.navbar-card .tab[aria-selected="true"] {
+    background: #204891 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+.navbar-card .tab:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background: #929292;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-card .tab:first-child:after {
+    display: none;
+}
+
+.navbar-card-tabs {
+    border: none;
+    min-height: 32px;
+    width: 100%;
+}
+.navbar-card-tabs > div {
+    /* display: none; */
+}
+.navbar-card-tabs > div > span {
+    display: none;
+}
+
+.navbar-card-all,
+.navbar-card .tab.navbar-card-all {
+    border-radius: 11px;
+    border: none;
+    /* height: 30px;
+    line-height: 30px; */
+    padding: 7px 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Roboto', Roboto, Muli, Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-right: 15px;
+    min-width: 96px;
+}
+
+.navbar-card-all {
+    color: #151515;
+    display: block;
+    opacity: 1;
+    line-height: 16px;
+}
+
+.navbar-card-all.active {
+
+}
+.card-side-title {
+    top: 50%;
+    left: 24px;
+    position: absolute;
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: 0;
+    font-size: 22px;
+    color: #151515;
+}
+.widget-main-report-disabilitytype .td-title,
+.widget-main-report-violations .td-title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Roboto', Roboto, Muli, Helvetica Neue, Arial, sans-serif;
+    letter-spacing: -0.06px;
+    color: #151515;
+    opacity: 1;
+}
+#fuse-layout .page-form label {
+    color: #333;
+    font-size: 19px;
+}
+#fuse-navbar header {
+    background: linear-gradient(to right, #5e6c78 0%, #5e6c78 0%);
+}
+    
